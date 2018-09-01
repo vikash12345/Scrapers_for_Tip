@@ -14,7 +14,7 @@ require 'scraperwiki/simple_html_dom.php';
 	
 	
 	{
-	 $url =  [$link][$id];
+	 $url =   $link[$id];
 	echo "$url\n";
 	$link2 = file_get_html($url);
     
