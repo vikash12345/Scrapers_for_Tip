@@ -10,7 +10,7 @@ require 'scraperwiki/simple_html_dom.php';
 
 
 
-  for($id = 0; $id <= sizeof($link);; $id++)
+  for($id = 0; $id <= sizeof($link);$id++)
 	
 	
 	{
