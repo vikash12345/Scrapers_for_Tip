@@ -5,13 +5,25 @@
 require 'scraperwiki.php';
 require 'scraperwiki/simple_html_dom.php';
 //
-$html = file_get_html('http://www.google.com/');
-echo $html;
-//
+ $link = array("https://www.betkingtipsters.com/soccer-tipster/charlie-loton", 
+                "https://www.betkingtipsters.com/soccer-tipster/hayden-randall");
+
+
+
+  for($id = 0; $id <= sizeof($link);; $id++)
+	
+	
+	{
+	 $url =  [$link][$id]
+	echo "$url\n";
+	$link2 = file_get_html($url);
+    
+  }
+  
+  die();
+  
 // // Find something on the page using css selectors
-// $dom = new simple_html_dom();
-// $dom->load($html);
-// print_r($dom->find("table.list"));
+
 //
 // // Write out to the sqlite database using scraperwiki library
 // scraperwiki::save_sqlite(array('name'), array('name' => 'susan', 'occupation' => 'software developer'));
